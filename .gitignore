@@ -1,0 +1,5 @@
+.env
+/data
+vectordb_for_txt.pkl
+vectorstore_pdf.pkl
+.DS_Store
