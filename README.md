@@ -3,18 +3,18 @@
 ## Talk to your data
 ### query_text_files.ipynb
 - extract and embed text files from the data folder and store it in a faiss vector database
-- make OpenAI query including vector database and query-history to <span style="color:#40E0D0">ask questions about the text</span>
+- make OpenAI query including vector database and query-history to [ask questions about the text]()
 - to ensure OpenAI uses your own database, provide a text about e.g. a fictive person or animal the AI doesn't know yet
 
 ### query_pdf_files.ipynb
 - extract and embed pdf files from the data folder and store the text in a FAISS vector database
-- perform OpenAI query including vector database and query-history to <span style="color:#40E0D0">ask questions about the text in the pdf file</span>
+- perform OpenAI query including vector database and query-history to [ask questions about the text in a pdf file]()
 
 ### query_with_functions
-- provide openai API that different functions which it can call in addition to its own knowledge base
-- here, the Wolfram Alpha API is used to <span style="color:#40E0D0">improve Chatgpt output in the field of real-time data, mathematical calculations, and scientific problems</span>. (put your free wolfram alpha app id to the .env file)
+- provide openai API with different functions that it can call in addition to its own knowledge base
+- here, the Wolfram Alpha API is used to [improve Chatgpt output in the field of real-time data, mathematical calculations, and scientific problems](). (put your free wolfram alpha app id to the .env file)
 - even images provided by the wolfram alpha API are catched (as with the expensive chatgpt plus plugin) and displayed in the notebook (to my knowledge langchain WolframAlphaAPIWrapper does not trigger the includepodid parameter in the request)
-- <span style="color:#40E0D0">talk with your own database</span>: give openai a function which gives access to your database and the langchain SQLDatabaseChain gives easiest access ever, just type your question concerning the data in natural language
+- [talk with your own database](): give openai a function which gives access to your database and the langchain SQLDatabaseChain gives easiest access ever, just type your question concerning the data in natural language
 
 # General Advice
 - add a /data folder to your project directory and put your own data files in here (.txt, .pdf or db/ .sql)
